@@ -1,0 +1,42 @@
+{
+  "repository": {},
+  "license": "MIT",
+  "description": "my map",
+  "scripts": {
+    "build-css": "node-sass --output-style compressed -r -o css scss/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "deploy": "npm run build:production",
+    "build": "npm run build-css && webpack --mode development",
+    "build:production": "npm run build-css && webpack --mode production",
+    "watch": "webpack --mode development -w",
+    "lint:fix": "tslint --project . --fix",
+    "lint": "tslint --project ."
+  },
+  "devDependencies": {
+    "node-sass": "*",
+    "@types/node": "*",
+    "leaflet":"1.4.0",
+    "vue2-leaflet":"^1.2.3",
+    "@types/leaflet":"1.4.0",
+    "axios": "*",
+    "css-loader": "*",
+    "copy-webpack-plugin": "*",
+    "html-loader": "*",
+    "ts-loader": "^4.1.0",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "*",
+    "typescript": "^2.7.2",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.2.0",
+    "vue-loader": "^14.2.2",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vue-property-decorator": "*",
+    "vue-template-compiler": "*",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.0",
+    "moment": "*",
+    "vue-smooth-dnd": "0.2.5",
+    "vue2-transitions": "^0.2.3",
+    "material-icons": "^0.2.3"
+  }
+}

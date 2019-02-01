@@ -1,0 +1,9 @@
+*.log
+/dist
+/assets/js/*
+/assets/css/*
+/node_modules
+/assets/node_modules/*
+/public/css
+/public/js
+
