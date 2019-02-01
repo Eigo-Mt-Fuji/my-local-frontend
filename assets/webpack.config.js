@@ -57,6 +57,14 @@ module.exports = function(env, argv) {
                     to: __dirname + "/../public/css/vue-material/dist/vue-material.min.css",
                 },
                 {
+                    from: __dirname + "/node_modules/leaflet/dist",
+                    to: __dirname + "/../public/css/leaflet/dist",
+                }, 
+                {
+                    from: __dirname + "/node_modules/leaflet/dist/images",
+                    to: __dirname + "/../public/images/leaflet/dist/",
+                },
+                {
                     from: __dirname + "/node_modules/material-icons/css",
                     to: __dirname + "/../public/css/material-icons/css",
                 },
